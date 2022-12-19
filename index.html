@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+</head>
+<body>
+    <div id="container">
+        <div class="conv-screen">
+            <div class="input_con">
+                <select name="currency" id="currencylist">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CNY">CNY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="KD">KD</option>
+                </select>
+                <input type="text" name="input" id="inputel" readonly>
+            </div>
+        
+
+            <div class="output_con">
+                <select name="currency" id="defaultcurrency">
+                    <option value="NGN">NGN</option>
+                </select>
+                <input type="number" name="output" id="outputel" readonly>
+            </div>
+        </div>
+
+        <div id="num_con">
+            <div class="btn one">
+                <span>1</span>
+            </div>
+            <div class="btn two">
+                <span>2</span>
+            </div>
+            <div class="btn three">
+                <span>3</span>
+            </div>
+            <div class="btn four">
+                <span>4</span>
+            </div>
+            <div class="btn five">
+                <span>5</span>
+            </div>
+            <div class="btn six">
+                <span>6</span>
+            </div>
+            <div class="btn seven">
+                <span>7</span>
+            </div>
+            <div class="btn eight">
+                <span>8</span>
+            </div>
+            <div class="btn nine">
+                <span>9</span>
+            </div>
+            <div class="btn zero">
+                <span>0</span>
+            </div>
+            <div class="btn dot">
+                <span>.</span>
+            </div>
+            <div class="btn clear">
+                <span>C</span>
+            </div>
+            <div class="convert">
+                <span>=</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

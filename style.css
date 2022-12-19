@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+input{
+    padding-right: 10px;
+    width: 90%;
+    height: 50px;
+    background-color: rgba(253, 250, 250, 0.295);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #b3b3b3,
+            inset -5px -5px 10px #ffffff;
+    text-align: right;
+    font-size: 18px;
+    outline: none;
+}
+select{
+    height: 50px;
+    background-color: rgba(253, 250, 250, 0.295);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid goldenrod;
+    outline: none;
+}
+
+#container{
+    margin: 20px auto;
+    padding: 20px;
+    height: 560px;
+    width: 460px;
+    /* background-color: rgb(247, 239, 137); */
+    background-color: #e0e0e0;
+    border: 2px solid rgba(218, 165, 32, 0.288);
+    border-radius: 20px;
+}
+@media screen and (max-width: 728px) {
+    #container{
+        width: 90%;
+    }
+}
+
+#container .conv-screen{
+    border: 2px groove rgba(218, 165, 32, 0.356);
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #cecece,
+                inset -5px -5px 10px #f2f2f2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container .conv-screen .input_con,
+#container .conv-screen .output_con{
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+#container #num_con{
+    height: 50%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#container #num_con .btn, .convert{
+    background-color: goldenrod;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 10px #afafaf,
+                 -5px -5px 10px #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+div > span{
+    border: 2px groove rgba(247, 240, 137, 0.596);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+div > span:hover{
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  9px 9px 18px #cacaca,
+             -9px -9px 18px #f6f6f6;
+}
+.zero{
+    grid-column: span 2;
+}
+
+.convert{
+    grid-column-start: 4;
+    grid-row: 1;
+    grid-row-end: 4;
+}
+
+#startCount{
+    background-color: blue;
+    width: 80px;
+    height: 50px;
+}
